@@ -1,431 +1,49 @@
-2022-12-21 20:37:26,088 - 
-2022-12-21 20:37:26,088 - Entering EtlData utility
-2022-12-21 20:37:26,088 -    Entering run_extraction using (args, config)
-2022-12-21 20:37:26,088 -       Entering read_feature using (config)
-2022-12-21 20:37:26,088 -          Entering read using (self, config)
-2022-12-21 20:37:27,428 - Dennis Kim records <525461> were read from <./data/denniskim_extraction_input.csv>
-2022-12-21 20:37:27,430 -          Leaving read using (self, config)
-2022-12-21 20:37:31,495 -       Leaving read_feature using (config)
-2022-12-21 20:37:31,496 -       Entering mapping_feature using (df, config)
-2022-12-21 20:37:31,496 -          Entering read_feature using (config)
-2022-12-21 20:37:31,497 -             Entering read using (self, config)
-2022-12-21 20:37:32,551 - Dennis Kim records <43> were read from <./data/denniskim_extraction_mapping.xlsx>
-2022-12-21 20:37:32,551 -             Leaving read using (self, config)
-2022-12-21 20:37:32,554 -          Leaving read_feature using (config)
-2022-12-21 20:37:32,918 -       Leaving mapping_feature using (df, config)
-2022-12-21 20:37:32,934 -       Entering df_col_mods_feature using (df, config)
-2022-12-21 20:37:32,946 -       Leaving df_col_mods_feature using (df, config)
-2022-12-21 20:37:32,947 -       Entering write_feature using (config, df)
-2022-12-21 20:37:32,947 -          Entering write using (self, config, df)
-2022-12-21 20:39:47,873 - Dennis Kim records <525461> were written to <./data/joinedData.xlsx>
-2022-12-21 20:39:47,873 -          Leaving write using (self, config, df)
-2022-12-21 20:39:47,875 -       Leaving write_feature using (config, df)
-2022-12-21 20:39:47,875 -    Leaving run_extraction using (args, config)
-2022-12-21 20:39:47,905 - Leaving EtlData utility
-2022-12-21 20:40:11,077 - 
-2022-12-21 20:40:11,078 - Entering EtlData utility
-2022-12-21 20:40:11,078 -    Entering run_transformation using (args, config)
-2022-12-21 20:40:11,078 -       Entering read_feature using (config)
-2022-12-21 20:40:11,078 -          Entering read using (self, config)
-2022-12-21 20:41:37,772 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-21 20:41:37,772 -          Leaving read using (self, config)
-2022-12-21 20:41:38,886 -       Leaving read_feature using (config)
-2022-12-21 20:41:38,887 -       Entering transform_feature using (df, config)
-2022-12-21 20:41:38,969 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,020 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,112 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,158 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,240 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,334 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,405 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,471 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:41:39,496 -       Leaving transform_feature using (df, config)
-2022-12-21 20:41:39,497 -       Entering write_feature using (config, df)
-2022-12-21 20:41:39,497 -          Entering write using (self, config, df)
-2022-12-21 20:41:42,175 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-21 20:41:42,188 -          Leaving write using (self, config, df)
-2022-12-21 20:41:42,188 -       Leaving write_feature using (config, df)
-2022-12-21 20:41:42,189 -    Leaving run_transformation using (args, config)
-2022-12-21 20:41:42,216 - Leaving EtlData utility
-2022-12-21 20:42:21,974 - 
-2022-12-21 20:42:21,974 - Entering EtlData utility
-2022-12-21 20:42:21,975 -    Entering run_extraction using (args, config)
-2022-12-21 20:42:21,975 -       Entering read_feature using (config)
-2022-12-21 20:42:21,975 -          Entering read using (self, config)
-2022-12-21 20:42:23,304 - Dennis Kim records <525461> were read from <./data/denniskim_extraction_input.csv>
-2022-12-21 20:42:23,304 -          Leaving read using (self, config)
-2022-12-21 20:42:26,981 -       Leaving read_feature using (config)
-2022-12-21 20:42:26,981 -       Entering mapping_feature using (df, config)
-2022-12-21 20:42:26,982 -          Entering read_feature using (config)
-2022-12-21 20:42:26,982 -             Entering read using (self, config)
-2022-12-21 20:42:27,929 - Dennis Kim records <43> were read from <./data/denniskim_extraction_mapping.xlsx>
-2022-12-21 20:42:27,929 -             Leaving read using (self, config)
-2022-12-21 20:42:27,933 -          Leaving read_feature using (config)
-2022-12-21 20:42:28,336 -       Leaving mapping_feature using (df, config)
-2022-12-21 20:42:28,352 -       Entering df_col_mods_feature using (df, config)
-2022-12-21 20:42:28,376 -       Leaving df_col_mods_feature using (df, config)
-2022-12-21 20:42:28,376 -       Entering write_feature using (config, df)
-2022-12-21 20:42:28,376 -          Entering write using (self, config, df)
-2022-12-21 20:44:41,215 - Dennis Kim records <525461> were written to <./data/joinedData.xlsx>
-2022-12-21 20:44:41,215 -          Leaving write using (self, config, df)
-2022-12-21 20:44:41,215 -       Leaving write_feature using (config, df)
-2022-12-21 20:44:41,215 -    Leaving run_extraction using (args, config)
-2022-12-21 20:44:41,241 - Leaving EtlData utility
-2022-12-21 20:45:54,334 - 
-2022-12-21 20:45:54,334 - Entering EtlData utility
-2022-12-21 20:45:54,335 -    Entering run_transformation using (args, config)
-2022-12-21 20:45:54,335 -       Entering read_feature using (config)
-2022-12-21 20:45:54,335 -          Entering read using (self, config)
-2022-12-21 20:47:26,868 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-21 20:47:26,869 -          Leaving read using (self, config)
-2022-12-21 20:47:28,026 -       Leaving read_feature using (config)
-2022-12-21 20:47:28,026 -       Entering transform_feature using (df, config)
-2022-12-21 20:47:28,086 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,133 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,233 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,273 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,363 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,458 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,558 -          Entering aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,626 -          Leaving aggregate_feature using (df, category, config)
-2022-12-21 20:47:28,652 -       Leaving transform_feature using (df, config)
-2022-12-21 20:47:28,652 -       Entering write_feature using (config, df)
-2022-12-21 20:47:28,652 -          Entering write using (self, config, df)
-2022-12-21 20:47:31,382 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-21 20:47:31,391 -          Leaving write using (self, config, df)
-2022-12-21 20:47:31,391 -       Leaving write_feature using (config, df)
-2022-12-21 20:47:31,392 -    Leaving run_transformation using (args, config)
-2022-12-21 20:47:31,418 - Leaving EtlData utility
-2022-12-23 00:15:49,519 - 
-2022-12-23 00:15:49,519 - Entering EtlData utility
-2022-12-23 00:15:49,519 -    Entering run_extraction using (args, config)
-2022-12-23 00:15:49,519 -       Entering read_feature using (config)
-2022-12-23 00:15:49,519 -          Entering read using (self, config)
-2022-12-23 00:15:49,519 - Dennis Kim records <212> were read from <./data/denniskim_extraction_input1.csv>
-2022-12-23 00:15:49,519 -          Leaving read using (self, config)
-2022-12-23 00:15:49,535 -       Leaving read_feature using (config)
-2022-12-23 00:15:49,535 -       Entering mapping_feature using (df, config)
-2022-12-23 00:15:49,535 -          Entering read_feature using (config)
-2022-12-23 00:15:49,535 -             Entering read using (self, config)
-2022-12-23 00:15:50,572 - Dennis Kim records <43> were read from <./data/denniskim_extraction_mapping.xlsx>
-2022-12-23 00:15:50,572 -             Leaving read using (self, config)
-2022-12-23 00:15:50,572 -          Leaving read_feature using (config)
-2022-12-23 00:15:50,572 -       Leaving mapping_feature using (df, config)
-2022-12-23 00:15:50,572 -       Entering df_col_mods_feature using (df, config)
-2022-12-23 00:15:50,580 -       Leaving df_col_mods_feature using (df, config)
-2022-12-23 00:15:50,580 -       Entering write_feature using (config, df)
-2022-12-23 00:15:50,580 -          Entering write using (self, config, df)
-2022-12-23 00:15:50,769 - Dennis Kim records <212> were written to <./data/joinedData.xlsx>
-2022-12-23 00:15:50,769 -          Leaving write using (self, config, df)
-2022-12-23 00:15:50,769 -       Leaving write_feature using (config, df)
-2022-12-23 00:15:50,769 -    Leaving run_extraction using (args, config)
-2022-12-23 00:15:50,769 - Leaving EtlData utility
-2022-12-23 00:16:06,553 - 
-2022-12-23 00:16:06,555 - Entering EtlData utility
-2022-12-23 00:16:06,555 -    Entering run_transformation using (args, config)
-2022-12-23 00:16:06,555 -       Entering read_feature using (config)
-2022-12-23 00:16:06,555 -          Entering read using (self, config)
-2022-12-23 00:16:07,198 - Dennis Kim records <212> were read from <./data/joinedData.xlsx>
-2022-12-23 00:16:07,198 -          Leaving read using (self, config)
-2022-12-23 00:16:07,206 -       Leaving read_feature using (config)
-2022-12-23 00:16:07,206 -       Entering transform_feature using (df, config)
-2022-12-23 00:16:07,206 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,208 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,208 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,208 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,216 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,218 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,218 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,218 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:07,218 -       Leaving transform_feature using (df, config)
-2022-12-23 00:16:07,218 -       Entering write_feature using (config, df)
-2022-12-23 00:16:07,218 -          Entering write using (self, config, df)
-2022-12-23 00:16:07,218 - Leaving EtlData utility incomplete with errors
-2022-12-23 00:16:40,157 - 
-2022-12-23 00:16:40,157 - Entering EtlData utility
-2022-12-23 00:16:40,157 -    Entering run_transformation using (args, config)
-2022-12-23 00:16:40,157 -       Entering read_feature using (config)
-2022-12-23 00:16:40,157 -          Entering read using (self, config)
-2022-12-23 00:16:40,780 - Dennis Kim records <212> were read from <./data/joinedData.xlsx>
-2022-12-23 00:16:40,780 -          Leaving read using (self, config)
-2022-12-23 00:16:40,790 -       Leaving read_feature using (config)
-2022-12-23 00:16:40,790 -       Entering transform_feature using (df, config)
-2022-12-23 00:16:40,790 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,790 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,790 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,801 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,801 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,801 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,801 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,809 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:16:40,809 -       Leaving transform_feature using (df, config)
-2022-12-23 00:16:40,811 -       Entering write_feature using (config, df)
-2022-12-23 00:16:40,811 -          Entering write using (self, config, df)
-2022-12-23 00:16:40,811 - Leaving EtlData utility incomplete with errors
-2022-12-23 00:17:01,788 - 
-2022-12-23 00:17:01,788 - Entering EtlData utility
-2022-12-23 00:17:01,788 -    Entering run_transformation using (args, config)
-2022-12-23 00:17:01,788 -       Entering read_feature using (config)
-2022-12-23 00:17:01,788 -          Entering read using (self, config)
-2022-12-23 00:17:02,436 - Dennis Kim records <212> were read from <./data/joinedData.xlsx>
-2022-12-23 00:17:02,436 -          Leaving read using (self, config)
-2022-12-23 00:17:02,444 -       Leaving read_feature using (config)
-2022-12-23 00:17:02,444 -       Entering transform_feature using (df, config)
-2022-12-23 00:17:02,446 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,446 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,446 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,446 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,454 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,456 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,456 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,456 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:17:02,456 -       Leaving transform_feature using (df, config)
-2022-12-23 00:17:02,456 -       Entering write_feature using (config, df)
-2022-12-23 00:17:02,456 -          Entering write using (self, config, df)
-2022-12-23 00:17:02,535 - Dennis Kim records <214> were written to <./data/transformedData.xlsx>
-2022-12-23 00:17:02,535 -          Leaving write using (self, config, df)
-2022-12-23 00:17:02,535 -       Leaving write_feature using (config, df)
-2022-12-23 00:17:02,535 -    Leaving run_transformation using (args, config)
-2022-12-23 00:17:02,535 - Leaving EtlData utility
-2022-12-23 00:18:08,070 - 
-2022-12-23 00:18:08,070 - Entering EtlData utility
-2022-12-23 00:18:08,070 -    Entering run_extraction using (args, config)
-2022-12-23 00:18:08,070 -       Entering read_feature using (config)
-2022-12-23 00:18:08,070 -          Entering read using (self, config)
-2022-12-23 00:18:08,797 - Dennis Kim records <525461> were read from <./data/denniskim_extraction_input.csv>
-2022-12-23 00:18:08,797 -          Leaving read using (self, config)
-2022-12-23 00:18:11,530 -       Leaving read_feature using (config)
-2022-12-23 00:18:11,530 -       Entering mapping_feature using (df, config)
-2022-12-23 00:18:11,530 -          Entering read_feature using (config)
-2022-12-23 00:18:11,530 -             Entering read using (self, config)
-2022-12-23 00:18:12,189 - Dennis Kim records <43> were read from <./data/denniskim_extraction_mapping.xlsx>
-2022-12-23 00:18:12,189 -             Leaving read using (self, config)
-2022-12-23 00:18:12,200 -          Leaving read_feature using (config)
-2022-12-23 00:18:12,472 -       Leaving mapping_feature using (df, config)
-2022-12-23 00:18:12,480 -       Entering df_col_mods_feature using (df, config)
-2022-12-23 00:18:12,490 -       Leaving df_col_mods_feature using (df, config)
-2022-12-23 00:18:12,490 -       Entering write_feature using (config, df)
-2022-12-23 00:18:12,490 -          Entering write using (self, config, df)
-2022-12-23 00:19:48,919 - Dennis Kim records <525461> were written to <./data/joinedData.xlsx>
-2022-12-23 00:19:48,919 -          Leaving write using (self, config, df)
-2022-12-23 00:19:48,919 -       Leaving write_feature using (config, df)
-2022-12-23 00:19:48,919 -    Leaving run_extraction using (args, config)
-2022-12-23 00:19:48,939 - Leaving EtlData utility
-2022-12-23 00:20:55,529 - 
-2022-12-23 00:20:55,529 - Entering EtlData utility
-2022-12-23 00:20:55,529 -    Entering run_transformation using (args, config)
-2022-12-23 00:20:55,529 -       Entering read_feature using (config)
-2022-12-23 00:20:55,529 -          Entering read using (self, config)
-2022-12-23 00:21:50,949 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-23 00:21:50,949 -          Leaving read using (self, config)
-2022-12-23 00:21:51,668 -       Leaving read_feature using (config)
-2022-12-23 00:21:51,668 -       Entering transform_feature using (df, config)
-2022-12-23 00:21:51,708 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:21:51,743 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:21:51,788 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:21:51,823 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:21:51,868 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:21:51,928 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:21:51,975 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 00:21:52,018 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 00:21:52,038 -       Leaving transform_feature using (df, config)
-2022-12-23 00:21:52,038 -       Entering write_feature using (config, df)
-2022-12-23 00:21:52,038 -          Entering write using (self, config, df)
-2022-12-23 00:21:54,088 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-23 00:21:54,088 -          Leaving write using (self, config, df)
-2022-12-23 00:21:54,088 -       Leaving write_feature using (config, df)
-2022-12-23 00:21:54,088 -    Leaving run_transformation using (args, config)
-2022-12-23 00:21:54,113 - Leaving EtlData utility
-2022-12-23 00:55:41,027 - 
-2022-12-23 00:55:41,027 - Entering EtlData utility
-2022-12-23 00:55:41,027 -    Entering run_extraction using (args, config)
-2022-12-23 00:55:41,027 -       Entering read_feature using (config)
-2022-12-23 00:55:41,027 -          Entering read using (self, config)
-2022-12-23 00:55:41,797 - Dennis Kim records <525461> were read from <./data/input_ecomm_sales.csv>
-2022-12-23 00:55:41,797 -          Leaving read using (self, config)
-2022-12-23 00:55:44,317 -       Leaving read_feature using (config)
-2022-12-23 00:55:44,317 -       Entering mapping_feature using (df, config)
-2022-12-23 00:55:44,317 -          Entering read_feature using (config)
-2022-12-23 00:55:44,317 -             Entering read using (self, config)
-2022-12-23 00:55:44,947 - Dennis Kim records <43> were read from <./data/mapping_ecomm_sales.xlsx>
-2022-12-23 00:55:44,947 -             Leaving read using (self, config)
-2022-12-23 00:55:44,947 -          Leaving read_feature using (config)
-2022-12-23 00:55:45,177 -       Leaving mapping_feature using (df, config)
-2022-12-23 00:55:45,187 -       Entering df_col_mods_feature using (df, config)
-2022-12-23 00:55:45,187 -       Leaving df_col_mods_feature using (df, config)
-2022-12-23 00:55:45,187 -       Entering write_feature using (config, df)
-2022-12-23 00:55:45,187 -          Entering write using (self, config, df)
-2022-12-23 00:57:25,026 - Dennis Kim records <525461> were written to <./data/joinedData.xlsx>
-2022-12-23 00:57:25,026 -          Leaving write using (self, config, df)
-2022-12-23 00:57:25,026 -       Leaving write_feature using (config, df)
-2022-12-23 00:57:25,037 -    Leaving run_extraction using (args, config)
-2022-12-23 00:57:25,046 - Leaving EtlData utility
-2022-12-23 01:00:15,486 - 
-2022-12-23 01:00:15,486 - Entering EtlData utility
-2022-12-23 01:00:15,486 -    Entering run_transformation using (args, config)
-2022-12-23 01:00:15,486 -       Entering read_feature using (config)
-2022-12-23 01:00:15,486 -          Entering read using (self, config)
-2022-12-23 01:01:13,510 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-23 01:01:13,510 -          Leaving read using (self, config)
-2022-12-23 01:01:14,205 -       Leaving read_feature using (config)
-2022-12-23 01:01:14,205 -       Entering transform_feature using (df, config)
-2022-12-23 01:01:14,241 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,275 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,330 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,355 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,405 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,465 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,515 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,555 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:01:14,575 -       Leaving transform_feature using (df, config)
-2022-12-23 01:01:14,575 -       Entering write_feature using (config, df)
-2022-12-23 01:01:14,575 -          Entering write using (self, config, df)
-2022-12-23 01:01:16,935 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-23 01:01:16,940 -          Leaving write using (self, config, df)
-2022-12-23 01:01:16,945 -       Leaving write_feature using (config, df)
-2022-12-23 01:01:16,945 -    Leaving run_transformation using (args, config)
-2022-12-23 01:01:16,960 - Leaving EtlData utility
-2022-12-23 01:03:33,289 - 
-2022-12-23 01:03:33,289 - Entering EtlData utility
-2022-12-23 01:03:33,299 -    Entering run_extraction using (args, config)
-2022-12-23 01:03:33,299 -       Entering read_feature using (config)
-2022-12-23 01:03:33,299 -          Entering read using (self, config)
-2022-12-23 01:03:34,039 - Dennis Kim records <525461> were read from <./data/input_ecomm_sales.csv>
-2022-12-23 01:03:34,039 -          Leaving read using (self, config)
-2022-12-23 01:03:36,639 -       Leaving read_feature using (config)
-2022-12-23 01:03:36,639 -       Entering mapping_feature using (df, config)
-2022-12-23 01:03:36,639 -          Entering read_feature using (config)
-2022-12-23 01:03:36,639 -             Entering read using (self, config)
-2022-12-23 01:03:37,632 - Dennis Kim records <43> were read from <./data/mapping_ecomm_sales.xlsx>
-2022-12-23 01:03:37,632 -             Leaving read using (self, config)
-2022-12-23 01:03:37,632 -          Leaving read_feature using (config)
-2022-12-23 01:03:37,849 -       Leaving mapping_feature using (df, config)
-2022-12-23 01:03:37,859 -       Entering df_col_mods_feature using (df, config)
-2022-12-23 01:03:37,869 -       Leaving df_col_mods_feature using (df, config)
-2022-12-23 01:03:37,869 -       Entering write_feature using (config, df)
-2022-12-23 01:03:37,869 -          Entering write using (self, config, df)
-2022-12-23 01:05:19,858 - Dennis Kim records <525461> were written to <./data/joinedData.xlsx>
-2022-12-23 01:05:19,858 -          Leaving write using (self, config, df)
-2022-12-23 01:05:19,858 -       Leaving write_feature using (config, df)
-2022-12-23 01:05:19,858 -    Leaving run_extraction using (args, config)
-2022-12-23 01:05:19,878 - Leaving EtlData utility
-2022-12-23 01:05:29,428 - 
-2022-12-23 01:05:29,428 - Entering EtlData utility
-2022-12-23 01:05:29,428 -    Entering run_transformation using (args, config)
-2022-12-23 01:05:29,428 -       Entering read_feature using (config)
-2022-12-23 01:05:29,428 -          Entering read using (self, config)
-2022-12-23 01:06:24,693 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-23 01:06:24,693 -          Leaving read using (self, config)
-2022-12-23 01:06:25,423 -       Leaving read_feature using (config)
-2022-12-23 01:06:25,423 -       Entering transform_feature using (df, config)
-2022-12-23 01:06:25,458 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,487 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,537 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,567 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,617 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,677 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,732 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,773 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 01:06:25,787 -       Leaving transform_feature using (df, config)
-2022-12-23 01:06:25,787 -       Entering write_feature using (config, df)
-2022-12-23 01:06:25,787 -          Entering write using (self, config, df)
-2022-12-23 01:06:27,837 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-23 01:06:27,852 -          Leaving write using (self, config, df)
-2022-12-23 01:06:27,852 -       Leaving write_feature using (config, df)
-2022-12-23 01:06:27,852 -    Leaving run_transformation using (args, config)
-2022-12-23 01:06:27,867 - Leaving EtlData utility
-2022-12-23 14:06:29,855 - 
-2022-12-23 14:06:29,855 - Entering EtlData utility
-2022-12-23 14:06:29,855 -    Entering run_extraction using (args, config)
-2022-12-23 14:06:29,855 -       Entering read_feature using (config)
-2022-12-23 14:06:29,855 -          Entering read using (self, config)
-2022-12-23 14:06:30,564 - Dennis Kim records <525461> were read from <./data/input_ecomm_sales.csv>
-2022-12-23 14:06:30,564 -          Leaving read using (self, config)
-2022-12-23 14:06:32,959 -       Leaving read_feature using (config)
-2022-12-23 14:06:32,959 -       Entering mapping_feature using (df, config)
-2022-12-23 14:06:32,959 -          Entering read_feature using (config)
-2022-12-23 14:06:32,959 -             Entering read using (self, config)
-2022-12-23 14:06:33,976 - Dennis Kim records <43> were read from <./data/mapping_ecomm_sales.xlsx>
-2022-12-23 14:06:33,976 -             Leaving read using (self, config)
-2022-12-23 14:06:33,976 -          Leaving read_feature using (config)
-2022-12-23 14:06:34,198 -       Leaving mapping_feature using (df, config)
-2022-12-23 14:06:34,208 -       Entering df_col_mods_feature using (df, config)
-2022-12-23 14:06:34,218 -       Leaving df_col_mods_feature using (df, config)
-2022-12-23 14:06:34,218 -       Entering write_feature using (config, df)
-2022-12-23 14:06:34,218 -          Entering write using (self, config, df)
-2022-12-23 14:08:04,707 - Dennis Kim records <525461> were written to <./data/joinedData.xlsx>
-2022-12-23 14:08:04,707 -          Leaving write using (self, config, df)
-2022-12-23 14:08:04,707 -       Leaving write_feature using (config, df)
-2022-12-23 14:08:04,707 -    Leaving run_extraction using (args, config)
-2022-12-23 14:08:04,723 - Leaving EtlData utility
-2022-12-23 14:09:08,228 - 
-2022-12-23 14:09:08,228 - Entering EtlData utility
-2022-12-23 14:09:08,228 -    Entering run_transformation using (args, config)
-2022-12-23 14:09:08,228 -       Entering read_feature using (config)
-2022-12-23 14:09:08,228 -          Entering read using (self, config)
-2022-12-23 14:09:58,709 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-23 14:09:58,709 -          Leaving read using (self, config)
-2022-12-23 14:09:59,346 -       Leaving read_feature using (config)
-2022-12-23 14:09:59,346 -       Entering transform_feature using (df, config)
-2022-12-23 14:09:59,380 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,416 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,458 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,488 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,536 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,596 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,648 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,692 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:09:59,708 -       Leaving transform_feature using (df, config)
-2022-12-23 14:09:59,708 -       Entering write_feature using (config, df)
-2022-12-23 14:09:59,708 -          Entering write using (self, config, df)
-2022-12-23 14:09:59,708 - Leaving EtlData utility incomplete with errors
-2022-12-23 14:11:33,437 - 
-2022-12-23 14:11:33,440 - Entering EtlData utility
-2022-12-23 14:11:33,440 -    Entering run_transformation using (args, config)
-2022-12-23 14:11:33,440 -       Entering read_feature using (config)
-2022-12-23 14:11:33,440 -          Entering read using (self, config)
-2022-12-23 14:12:24,806 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-23 14:12:24,806 -          Leaving read using (self, config)
-2022-12-23 14:12:25,451 -       Leaving read_feature using (config)
-2022-12-23 14:12:25,451 -       Entering transform_feature using (df, config)
-2022-12-23 14:12:25,491 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,521 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,573 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,604 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,656 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,720 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,768 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,809 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:12:25,825 -       Leaving transform_feature using (df, config)
-2022-12-23 14:12:25,825 -       Entering write_feature using (config, df)
-2022-12-23 14:12:25,825 -          Entering write using (self, config, df)
-2022-12-23 14:12:27,803 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-23 14:12:27,811 -          Leaving write using (self, config, df)
-2022-12-23 14:12:27,811 -       Leaving write_feature using (config, df)
-2022-12-23 14:12:27,811 -    Leaving run_transformation using (args, config)
-2022-12-23 14:12:27,827 - Leaving EtlData utility
-2022-12-23 14:15:57,571 - 
-2022-12-23 14:15:57,571 - Entering EtlData utility
-2022-12-23 14:15:57,571 -    Entering run_transformation using (args, config)
-2022-12-23 14:15:57,571 -       Entering read_feature using (config)
-2022-12-23 14:15:57,571 -          Entering read using (self, config)
-2022-12-23 14:16:49,456 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
-2022-12-23 14:16:49,456 -          Leaving read using (self, config)
-2022-12-23 14:16:50,106 -       Leaving read_feature using (config)
-2022-12-23 14:16:50,106 -       Entering transform_feature using (df, config)
-2022-12-23 14:16:50,137 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,159 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,222 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,237 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,291 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,360 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,411 -          Entering aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,453 -          Leaving aggregate_feature using (df, category, config)
-2022-12-23 14:16:50,471 -       Leaving transform_feature using (df, config)
-2022-12-23 14:16:50,471 -       Entering write_feature using (config, df)
-2022-12-23 14:16:50,471 -          Entering write using (self, config, df)
-2022-12-23 14:16:52,425 - Dennis Kim records <37839> were written to <./data/transformedData.xlsx>
-2022-12-23 14:16:52,441 -          Leaving write using (self, config, df)
-2022-12-23 14:16:52,441 -       Leaving write_feature using (config, df)
-2022-12-23 14:16:52,441 -    Leaving run_transformation using (args, config)
-2022-12-23 14:16:52,456 - Leaving EtlData utility
+2023-05-20 19:18:00,146 - 
+2023-05-20 19:18:00,146 - Entering EtlData utility
+2023-05-20 19:18:00,146 -    Entering run_extraction using (args, config)
+2023-05-20 19:18:00,146 -       Entering read_feature using (config)
+2023-05-20 19:18:00,146 -          Entering read using (self, config)
+2023-05-20 19:18:00,859 - Dennis Kim records <525461> were read from <./data/input_ecomm_sales.csv>
+2023-05-20 19:18:00,859 -          Leaving read using (self, config)
+2023-05-20 19:18:03,545 -       Leaving read_feature using (config)
+2023-05-20 19:18:03,545 -       Entering mapping_feature using (df, config)
+2023-05-20 19:18:03,545 -          Entering read_feature using (config)
+2023-05-20 19:18:03,545 -             Entering read using (self, config)
+2023-05-20 19:18:04,029 - Dennis Kim records <43> were read from <./data/mapping_ecomm_sales.xlsx>
+2023-05-20 19:18:04,029 -             Leaving read using (self, config)
+2023-05-20 19:18:04,030 -          Leaving read_feature using (config)
+2023-05-20 19:18:04,247 -       Leaving mapping_feature using (df, config)
+2023-05-20 19:18:04,257 -       Entering df_col_mods_feature using (df, config)
+2023-05-20 19:18:04,266 -       Leaving df_col_mods_feature using (df, config)
+2023-05-20 19:18:04,266 -       Entering write_feature using (config, df)
+2023-05-20 19:18:04,266 -          Entering write using (self, config, df)
+2023-05-20 19:20:37,086 - Dennis Kim records <525461> were written to <C:\Users\Dennis Kim\Desktop\NYU\2022\Fall\Soft_Engineering_Lab\version 2023 05 20\data\joinedData_1.xlsx>
+2023-05-20 19:20:37,086 -          Leaving write using (self, config, df)
+2023-05-20 19:20:37,086 -       Leaving write_feature using (config, df)
+2023-05-20 19:20:37,086 -    Leaving run_extraction using (args, config)
+2023-05-20 19:20:37,167 - Leaving EtlData utility
+2023-05-20 19:20:59,913 - 
+2023-05-20 19:20:59,913 - Entering EtlData utility
+2023-05-20 19:20:59,913 -    Entering run_transformation using (args, config)
+2023-05-20 19:20:59,913 -       Entering read_feature using (config)
+2023-05-20 19:20:59,913 -          Entering read using (self, config)
+2023-05-20 19:22:13,879 - Dennis Kim records <525461> were read from <./data/joinedData.xlsx>
+2023-05-20 19:22:13,880 -          Leaving read using (self, config)
+2023-05-20 19:22:14,553 -       Leaving read_feature using (config)
+2023-05-20 19:22:14,553 -       Entering transform_feature using (df, config)
+2023-05-20 19:22:14,585 -          Entering aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,638 -          Leaving aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,669 -          Entering aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,708 -          Leaving aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,747 -          Entering aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,823 -          Leaving aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,879 -          Entering aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,923 -          Leaving aggregate_feature using (df, category, config)
+2023-05-20 19:22:14,930 -       Leaving transform_feature using (df, config)
+2023-05-20 19:22:14,930 -       Entering write_feature using (config, df)
+2023-05-20 19:22:14,930 -          Entering write using (self, config, df)
+2023-05-20 19:22:17,143 - Dennis Kim records <37839> were written to <C:\Users\Dennis Kim\Desktop\NYU\2022\Fall\Soft_Engineering_Lab\version 2023 05 20\data\transformedData_1.xlsx>
+2023-05-20 19:22:17,145 -          Leaving write using (self, config, df)
+2023-05-20 19:22:17,145 -       Leaving write_feature using (config, df)
+2023-05-20 19:22:17,145 -    Leaving run_transformation using (args, config)
+2023-05-20 19:22:17,164 - Leaving EtlData utility
