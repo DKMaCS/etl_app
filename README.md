@@ -1,6 +1,8 @@
 # Internet Sales ETL Program
 #### Author: Dennis Kim
 
+Note: this project is just a demonstration of coding principles, ETL workflow structuring, and terminal usage
+
 ## Configurations:
 Use config.json file to indicate configuration settings of your choosing. 
 ## Example terminal command line:
